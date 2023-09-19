@@ -16,8 +16,13 @@ const getToTop = () => {
   document.documentElement.scrollTop = 0;
 }
 const mobMenu = () => {
-
+if (nav.classList.contains('responsive')) {
+    nav.classList.remove('responsive')
+}else {
+    nav.classList.add('responsive')
 }
+}
+
 backButton.addEventListener('click', getToTop)
 mobButton.addEventListener('click', mobMenu)
 
