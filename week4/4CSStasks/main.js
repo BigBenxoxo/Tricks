@@ -1,5 +1,6 @@
-const backButton = document.querySelector('#backToTop');
-
+const backButton = document.querySelector('#backToTop'); 
+const mobButton = document.querySelector('.mobile')
+const nav = document.querySelector('nav ul')
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
@@ -14,6 +15,9 @@ const getToTop = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+const mobMenu = () => {
 
+}
 backButton.addEventListener('click', getToTop)
+mobButton.addEventListener('click', mobMenu)
 
